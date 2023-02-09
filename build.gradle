@@ -14,6 +14,12 @@ buildscript {
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+  { 
+  ./gradlew sonar \
+  -Dsonar.projectKey=Bobble-AI \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=sqp_f7011c03f160cb3e6276e7f75db32b564b3d1636
+}
 }
 
 allprojects {
